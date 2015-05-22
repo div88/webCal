@@ -1,10 +1,21 @@
 window.onload = function(){
   document.getElementById("userInput").value = "";
-  //document.getElementByClass("digit").getNumbers("click", calculator.getNumbers());
   
   document.getElementById("clearBtn").addEventListener("click", function(){
     document.getElementById("userInput").value = "";
     input1 = "";
+  });
+  
+  //On click of Dark theme button
+  document.getElementById("dark").addEventListener("click", function(){
+    document.getElementById("content").className = "";
+    document.getElementById("content").className = "dark calc-container";
+  });
+  
+  //On click of Light theme button
+  document.getElementById("lightTh").addEventListener("click", function(){
+    document.getElementById("content").className = "";
+    document.getElementById("content").className = "lightTh calc-container";
   }); 
 }
       
