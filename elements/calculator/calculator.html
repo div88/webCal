@@ -1,0 +1,80 @@
+<!-- Hi Divya,
+
+Here's the challenge, looking forward to seeing your work.
+
+In order to properly evaluate you as a potential candidate please complete the following exercise.
+
+Build a web calculator.
+
+The calculator should implement: add, subtract, multiply, divide, square root, clear result.
+
+The calculator will have 2 themes: Light and Dark. By adding theme="dark" to calculator element I should be able to switch calculator to dark version.
+
+Notes:
+- Preferably separate js/css/html elements into separate files
+- Where possible, please avoid additional libraries like jQuery - do as much in raw js as you can.
+- Consider cross browser support
+- add helpful comments where necessary.
+
+Version Control Requirements:
+- Please create a public github repo and share with us the link.
+- Commit often and with descriptive comments.
+
+Extra Credit:
+- At Quantifind we have recently started using the polymer framework (http://www.polymer-project.org/)
+- If you can build your calculator as a polymer component that will be a big +1 on your work!
+- If you use Polymer, consider the following:
+- The deliverable will be a zip file with a self contained Polymer web-component which I should be able to include dependency free (except for Polymer platform import) and use as an element.
+
+Sincerely, -->
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+    <style>
+      
+    </style>
+    <script type="text/javascript">
+      
+    </script>
+  </head>
+  <body>
+    <div class="calc-container">
+      <div class="row">
+        <input type="button" class="clrBtn" id="clearBtn" text="clr" value="clr"/>
+        <input type="text" id="userInput"/>
+      </div>
+      <div class="row">
+        <span class="digit" onclick="calculator.getNumbers(1);">1</span>
+        <span class="digit" onclick="calculator.getNumbers(2);">2</span>
+        <span class="digit" onclick="calculator.getNumbers(3);">3</span>
+        <span class="digit" onclick="calculator.getNumbers(4);">4</span>
+        
+      </div>
+      <div class="row">
+        <span class="digit" onclick="calculator.getNumbers(5);">5</span>
+        <span class="digit" onclick="calculator.getNumbers(6);">6</span>
+        <span class="digit" onclick="calculator.getNumbers(7);">7</span>
+        <span class="digit" onclick="calculator.getNumbers(8);">8</span>
+        
+      </div>
+      <div class="row">
+        <span class="digit" onclick="calculator.getNumbers(9);">9</span>
+        <span class="digit" onclick="calculator.getNumbers(0);">0</span>
+        <span class="digit">.</span>
+        <span class="operator" onclick="calculator.getResult();">=</span>
+        
+      </div>
+      <div class="row">
+        <input class="operator" value="+" onclick="calculator.getOperand(this);" text="+"/>
+        <input class="operator" value="-" onclick="calculator.getOperand(this);" text="-"/>
+        <input class="operator" value="*" onclick="calculator.getOperand(this);" text="*"/>
+        <input class="operator" value="/" onclick="calculator.getOperand(this);" text="/"/>
+        <input class="operator" value="root" onclick="calculator.getOperand(this);" text="Ã"/>
+      </div>
+    </div>
+  </body>
+</html>
