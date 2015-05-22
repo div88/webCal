@@ -19,32 +19,31 @@
         <input type="text" id="userInput"/>
       </div>
       <div class="row">
-        <span class="digit" onclick="calculator.getNumbers(1);">1</span>
-        <span class="digit" onclick="calculator.getNumbers(2);">2</span>
-        <span class="digit" onclick="calculator.getNumbers(3);">3</span>
-        <span class="digit" onclick="calculator.getNumbers(4);">4</span>
+        <input class="digit" onclick="calculator.getNumbers(1);" text="1" value="1">
+        <input class="digit" onclick="calculator.getNumbers(2); "text="2" value="2">
+        <input class="digit" onclick="calculator.getNumbers(3);" text="3" value="3">
+        <input class="digit" onclick="calculator.getNumbers(4);" text="4" value="4">
         
       </div>
       <div class="row">
-        <span class="digit" onclick="calculator.getNumbers(5);">5</span>
-        <span class="digit" onclick="calculator.getNumbers(6);">6</span>
-        <span class="digit" onclick="calculator.getNumbers(7);">7</span>
-        <span class="digit" onclick="calculator.getNumbers(8);">8</span>
+        <input class="digit" onclick="calculator.getNumbers(5);" text="5" value="5">
+        <input class="digit" onclick="calculator.getNumbers(6);" text="6" value="6">
+        <input class="digit" onclick="calculator.getNumbers(7);" text="7" value="7">
+        <input class="digit" onclick="calculator.getNumbers(8);" text="8" value="8">
         
       </div>
       <div class="row">
-        <span class="digit" onclick="calculator.getNumbers(9);">9</span>
-        <span class="digit" onclick="calculator.getNumbers(0);">0</span>
-        <span class="digit">.</span>
-        <span class="operator" onclick="calculator.getResult();">=</span>
-        
+        <input class="digit" onclick="calculator.getNumbers(9);" text="9" value="9">
+        <input class="digit" onclick="calculator.getNumbers(0);" text="0" value="0">
+       <!-- <input class="digit">.</span>-->
+       <input class="operator" value="root" onclick="calculator.getOperand(this);" text="Ã"/>
+       <input class="operator" value="+" onclick="calculator.getOperand(this);" text="+"/> 
       </div>
       <div class="row">
-        <input class="operator" value="+" onclick="calculator.getOperand(this);" text="+"/>
         <input class="operator" value="-" onclick="calculator.getOperand(this);" text="-"/>
         <input class="operator" value="*" onclick="calculator.getOperand(this);" text="*"/>
         <input class="operator" value="/" onclick="calculator.getOperand(this);" text="/"/>
-        <input class="operator" value="root" onclick="calculator.getOperand(this);" text="Ã"/>
+        <input class="operator equalOp" onclick="calculator.getResult();"  text="=" value="="></span>
       </div>
     </div>
   </body>
